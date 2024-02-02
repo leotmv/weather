@@ -1,0 +1,170 @@
+*{
+    font-family: "Gloria Hallelujah", cursive;
+}
+
+:root {
+    --scale: 1;
+}
+
+button:hover {
+    --scale: 2;
+}       
+
+.thing {
+    --scale: 1;
+    flex-direction: column;
+    transform: scale(var(--scale));
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 350px;
+    align-items: center;
+}
+
+.thing1{
+    flex-direction: column;
+    transform: scale(var(--scale));
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    border-radius: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    border: 0px;
+
+}
+
+input:hover{
+    --scale: 1.1;
+}
+
+input{
+    transform: scale(var(--scale));
+    transition: all 0.5s;
+    background-color: wheat;
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    outline: none;
+    border-radius: 0.75rem;
+    text-align: center;
+    border: 0px;
+    outline: none;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+label{
+    color: rgba(105, 105, 252, 0.792);
+    font-size: 2.1rem;
+}
+
+body{
+    background-color: skyblue;
+    background: url("nightSky.jpg");
+    background-size: cover;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.separatorInput{
+    width: 200px;
+    border-radius: 0.75rem;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 70px;
+}
+
+.buttonToShow{
+    background-color: wheat;
+    border-radius: 0.5rem;
+    outline: none;
+    border: solid lightblue 1px;
+    width: 120px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transform: scale(var(--scale));
+    transition: all 0.5s;
+}
+
+button:hover{
+    background-color: lightgreen;
+    opacity: 80%;
+}
+
+h1{
+    color:antiquewhite;
+    display: flex;
+    text-align: center;
+    font-size: 4rem;
+    position: relative;
+    top:-20px;
+    flex-direction: column;
+}
+
+.sizeCard:hover{
+    --scale: 1.05;
+}
+
+#willItRain{
+    background-color: lightgreen;
+}
+
+#intensity{
+    background-color: azure;
+}
+
+#tempMax{
+    background-color: lightcoral;
+}
+
+#tempMin{
+    background-color: aqua;
+}
+
+#cloudPercentage{
+    background-color: rgb(189, 73, 189);
+}
+
+.sizeCard{
+    transform: scale(var(--scale));
+    transition: all 0.5s;
+    width:300px;
+    margin: 20px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:solid 2px black;
+    outline: none;
+    border-radius: 0.75rem;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.container{
+    width: 400px;
+    height: 400px;
+    background-color: wheat;
+    position: fixed;
+    top: 150px;
+    right: 10px;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}

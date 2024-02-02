@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link href="/main.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Weather</h1>
+    <form method="GET">  
+        <div class="thing">
+            <button class="buttonToShow"formaction="/parameters"  name="button">Click here!</button>  
+        </div>  
+    </form>
+
+    <form method="POST" class="separatorInput">
+        <div>
+            <label>City name</label>
+            <input placeholder="São Paulo" name="cityName">
+        </div>
+        <button class="thing1" formaction="/submit">Input</button>
+    </form>
+    
+
+    <div class="container">
+        <div id="willItRain" class="sizeCard">
+            Weather: <%=locals.willItRain%>
+        </div>
+        <div id="intensity" class="sizeCard">
+            State: <%=locals.intensity%>
+        </div>
+        <div id="tempMax" class="sizeCard">
+            Higher Temperature: <%=locals.tempMax%>°C
+        </div>
+        <div id="tempMin" class="sizeCard">
+            Lower Temperature: <%=locals.tempMin%>°C
+        </div>   
+        <div id="cloudPercentage" class="sizeCard">
+            Cloudy: <%=locals.cloudPercentage%>%
+        </div>                
+    </div>
+
+</body>
+</html>
