@@ -1,4 +1,5 @@
 If you want to run that project locally, please, follow the steps below:
+
 1 - You need to make sure you have node.js installed in your computer;
 
 2 - You need to install some packages to run this project. For this project you'll need to run the following command in some TERMINAL. The command is:
